@@ -1,5 +1,8 @@
-provider "aws"{
-region = "us-east-1"
-access_key = "AKIA6PJPFYGMLMTDGHHL"
-secret_key = "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"
+provider "aws" {
+  region = var.region
+
+  access_key = var.aws_access_key
+  secret_key = var.aws_secret_key
+
+  # other options for authentication
 }
